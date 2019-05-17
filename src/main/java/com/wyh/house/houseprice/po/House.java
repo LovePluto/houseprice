@@ -9,7 +9,7 @@ import java.util.Date;
  */
 
 @Entity
-@Table(name = "house_lianjia")
+@Table(name = "house_total")
 public class House implements Serializable {
 
     @Id
@@ -41,6 +41,19 @@ public class House implements Serializable {
     private Date createDate;
 
     public House() {
+    }
+
+    public House(String communityName, Double size, String type, Double totalPrice,
+                 Integer areaPrice, String location, Integer source, Integer district, String url) {
+        this.communityName = communityName;
+        this.size = size;
+        this.type = type;
+        this.totalPrice = totalPrice;
+        this.areaPrice = areaPrice;
+        this.location = location;
+        this.source = source;
+        this.district = district;
+        this.url = url;
     }
 
     public Long getId() {

@@ -19,4 +19,9 @@ public class HouseServiceImpl implements HouseService {
     public List<House> getAll() {
         return houseRepository.findAll();
     }
+
+    @Override
+    public void saveList(List<House> list) {
+        houseRepository.saveAll(list);
+    }
 }

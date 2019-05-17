@@ -5,7 +5,8 @@ package com.wyh.house.houseprice.type;
  * 数据来源枚举类型
  */
 public enum SourceType {
-    LIANJIA(1, "链家"), ANJUKE(2, "安居客");
+    LIANJIA(1, "链家"),
+    ANJUKE(2, "安居客");
 
 
     private Integer id;
@@ -26,5 +27,21 @@ public enum SourceType {
             }
         }
         return null;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 }

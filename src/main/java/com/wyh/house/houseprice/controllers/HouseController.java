@@ -44,6 +44,7 @@ public class HouseController extends BaseController {
         List<Double> sizeList = new ArrayList<>();
         List<Integer> areaList = new ArrayList<>();
         int count = 1;
+        System.out.println(all.size());
         for (House house : all) {
             totalList.add(house.getTotalPrice());
             sizeList.add(house.getSize());
@@ -57,7 +58,7 @@ public class HouseController extends BaseController {
         }
         map.put("size", sizeList);
         map.put("total", totalList);
-        map.put("area",areaList);
+        map.put("area", areaList);
         return map;
     }
 }
